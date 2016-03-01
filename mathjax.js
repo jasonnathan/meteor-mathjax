@@ -28,7 +28,7 @@ Template.registerHelper('mathjax', function () {
   };
   
   var mathjax = new Template('mathjax', function () {
-    var view = this, conent = '';
+    var view = this, content = '';
     if (view.templateContentBlock) {
       content = HTML.toText(Blaze._expandView(Blaze._TemplateWith(Template.parentData(),
         view.templateContentBlock.renderFunction)), HTML.TEXTMODE.STRING);
